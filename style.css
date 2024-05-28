@@ -197,3 +197,12 @@ body{
   }
 }
 
+
+@media (max-width:768px){
+  header{
+    flex-direction:column;
+    justift-content: center;
+    margin: 0 auto;
+  }
+}
+
