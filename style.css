@@ -56,9 +56,10 @@ body{
     padding: 20px 0;
 
     h2{
-      margin-bottom: 20px;
+      margin: 20px;
       color: gold;
       font-weight: 300;
+      text-align: center;
     }
 
     .main-content{
@@ -85,6 +86,8 @@ body{
       padding: 5px;
 
     }
+
+    
 
     .cards:hover{
       transform: scale(1.02);
@@ -181,6 +184,8 @@ body{
     align-items: center;
   }
 
+  
+
   .character-image{
     width: 200px;
     height: 200px;
@@ -190,6 +195,16 @@ body{
 
   }
 
+  @media (max-width:768px) {
+    .modal-content{
+      width: 50vw;
+      
+    }
+    .character-details{
+      text-align: center;
+    }
+  }
+
   .character-details{
     font-size: 1rem;
     font-weight: lighter;
@@ -197,27 +212,12 @@ body{
   }
 }
 
-
 @media (max-width:768px){
   header{
     flex-direction:column;
-    justift-content: center;
-    margin: 0 auto;
-  }
-  
-  main{
-    margin: 0 auto;
-    h2{
-      text-align: center;
-      margin:0 auto;
-    }
-  }
-  footer{
-    margin:0 auto;
-    .footer-logo{
-      text-align: center ;
-      margin:0 auto ;
-    }
-  }
+    justify-content: center;
+    margin: 10px auto;
+    row-gap: 10px;
+
 }
 
